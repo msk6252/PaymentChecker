@@ -14,7 +14,7 @@ class Slack
     end
   end
 
-  def get_user
+  def get_users_list
     begin
       token = @client.get_secret("SLACK_TOKEN")
       return unless token
