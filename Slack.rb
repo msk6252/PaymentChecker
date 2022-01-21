@@ -20,7 +20,7 @@ class Slack
       return unless token
       header = {
                  'Content-Type' => 'application/x-www-form-urlencoded',
-                 'Authorization' => 'Bearer ' + token
+                 'Authorization' => "Bearer #{token}"
                }
       conn = Faraday.new(url: BASE_URL, headers: header)
       res = conn.get('users.list')
