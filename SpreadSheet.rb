@@ -24,8 +24,6 @@ module SpreadSheet
       col = config[:col]
       value = config[:value]
 
-      puts sheet_id, sheet_num, row, col, value
-
       ws = init(sheet_id, sheet_num)
 
       ws[row, col] = value
