@@ -16,7 +16,7 @@ module SpreadSheet
   end
 
   def self.write(config = {})
-      puts config
+    return if config
     begin
       sheet_id = config[:sheet_id]
       sheet_num = config[:sheet_num]
